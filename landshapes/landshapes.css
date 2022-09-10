@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    margin: 2000px;
+    width: 100%;
+}
+
+.btn {
+    left:30px;
+    top:20px;
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    transition: transform 250ms, opacity 400ms;
+  }
+  
+  .btn:hover {
+    transform: translateY(-10px);
+  }
+
+  #title {
+    position: absolute;
+    font-size: 100px;
+    left: 350px;
+    top: 10px;
+    color: white;
+  }
+
+  #truncation {
+    position: absolute;
+    left: 1400px;
+    top: 1400px;
+  }
+
+
+  #lightsaber_1{
+    top: 600px;
+    left: 300px;
+    position: absolute;
+    color: white;
+  }
+
+  #lightsaber_2{
+    top: 600px;
+    left: 870px;
+    position: absolute;
+    color: white;
+  }
+
+  #lightsaber_3{
+    top: 700px;
+    left: 1500px;
+    position: absolute;
+    color: white;
+  }
+
+  #lightsaber_one {
+
+    top: 300px;
+    left: 120px;
+    position: absolute;
+    width:800px;
+    height:800px;
+  }
+
+
+  #lightsaber_two {
+
+    top: 300px;
+    left: 700px;
+    position: absolute;
+    width:800px;
+    height:800px;
+  }
+
+
+  #lightsaber_three {
+
+    top: 300px;
+    left: 1100px;
+    position: absolute;
+    width:800px;
+    height:800px;
+  }
+
+  #lightsaber_four {
+
+    top: 300px;
+    left: 1500px;
+    position: absolute;
+    width:800px;
+    height:800px;
+  }
+
+  #lightsaber_five {
+
+    top: 1200px;
+    left: 120px;
+    position: absolute;
+    width:1200px;
+    height:800px;
+  }

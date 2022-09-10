@@ -16,11 +16,17 @@ body {
 
 .introduction{
     color:antiquewhite;
+    font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     max-width:500px;
     position: relative;
     margin:0 0 1em;
+    transition: transform 250ms;
+}
 
+  
+.introduction:hover {
+transform: translateY(-10px);
 }
 
 /* Slideshow container */
@@ -36,12 +42,200 @@ body {
 
 .title{
     left:50px;
-    top: 1000px;
+    top: 980px;
     position: absolute;
     font-size: 60px;
     font-weight: 800;
     font-family: "Courier New";
     color: antiquewhite;
+}
+
+/*
+
+Button
+
+*/
+
+.button-container {
+
+    top: 980px;
+    left: 0px;
+    position: absolute;
+
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Courier New";
+    text-transform: uppercase;
+}
+
+#btn-mind{
+    top: 1400px;
+    left: 1600px;
+    position: absolute;
+
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Courier New";
+    text-transform: uppercase;
+}
+
+#btn-cavemen{
+    top: 900px;
+    left: 1400px;
+    position: absolute;
+
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Courier New";
+    text-transform: uppercase;
+}
+
+#btn-landshapes{
+    top: 1500px;
+    left: 1000px;
+    position: absolute;
+
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Courier New";
+    text-transform: uppercase;
+}
+
+#btn-pagoda{
+    top: 1300px;
+    left: 700px;
+    position: absolute;
+
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Courier New";
+    text-transform: uppercase;
+}
+
+#btn-sea{
+    top: 1200px;
+    left: 1300px;
+    position: absolute;
+
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Courier New";
+    text-transform: uppercase;
+}
+
+#btn-neon{
+    top: 1000px;
+    left: 850px;
+    position: absolute;
+
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Courier New";
+    text-transform: uppercase;
+}
+
+
+
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Courier New";
+    text-transform: uppercase;
+}
+
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-flip:after {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    color: antiquewhite;
+    padding: 80px 80px;
+    text-align: center;
+    border-radius: 100px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background-image: url("mind/Screenshot 2022-09-10 at 10.12.16.png");
+    background-size: 100%;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip:before {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    color: #adadaf;
+    padding: 30px 32px;
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
 }
 
 
@@ -134,4 +328,260 @@ Writing coding text
     100% {
         opacity: 1;
    }
+}
+
+
+
+/*
+Neon Madness
+*/
+
+.btn-neon:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-neon:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-neon:after {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    color: antiquewhite;
+    padding: 80px 80px;
+    text-align: center;
+    border-radius: 100px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background-image: url("neon_madness/lightsaber_one.jpg");
+    background-size: 100%;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-neon:before {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    color: #adadaf;
+    padding: 30px 32px;
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+
+
+/*
+
+Sea
+
+*/
+
+.btn-sea:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-sea:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-sea:after {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    color: antiquewhite;
+    padding: 80px 80px;
+    text-align: center;
+    border-radius: 100px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background-image: url("sea/man_and_the_sea.jpg");
+    background-size: 100%;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-sea:before {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    color: #adadaf;
+    padding: 30px 32px;
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+/*
+
+Cavemen
+
+*/
+
+.btn-cavemen:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-cavemen:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-cavemen:after {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    color: antiquewhite;
+    padding: 80px 80px;
+    text-align: center;
+    border-radius: 100px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background-image: url("les_cavemen/caveman.jpg");
+    background-size: 100%;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-cavemen:before {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    color: #adadaf;
+    padding: 30px 32px;
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+/*
+
+Pagoda universe
+
+*/
+.btn-pagoda:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-pagoda:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-pagoda:after {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    color: antiquewhite;
+    padding: 80px 80px;
+    text-align: center;
+    border-radius: 100px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background-image: url("pagoda_universe/pagoda_black_and_white.jpg");
+    background-size: 100%;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-pagoda:before {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    color: #adadaf;
+    padding: 30px 32px;
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+/*
+
+Landshapes
+
+*/
+
+.btn-landshapes:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-landshapes:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-landshapes:after {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    color: antiquewhite;
+    padding: 80px 80px;
+    text-align: center;
+    border-radius: 100px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background-image: url("landshapes/ice_age.jpg");
+    background-size: 100%;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-landshapes:before {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    color: #adadaf;
+    padding: 30px 32px;
+    display: block;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
 }

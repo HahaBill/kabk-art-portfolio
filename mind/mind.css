@@ -1,0 +1,124 @@
+
+body {
+    margin: 1500px;
+    width: 100%;
+    background-color: white;
+}
+
+.inner-circle{
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top:1000px;
+    left:1000px;
+    pointer-events:none;
+}
+
+h1,h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+  }
+h1 { font-size: 30px; }
+h2 {
+    color: #888;
+    font-size: 2em;
+}
+
+#lol{
+    position: absolute;
+    top:1400px;
+    left:1200px;
+}
+
+#ok{
+    position: absolute;
+    top:1200px;
+    left:1600px;
+}
+
+#sheesh{
+    position: absolute;
+    top:1100px;
+    left:1300px;
+}
+
+#rectangle {
+    position: relative;
+    top: 1800px;
+    left: 400px;
+    fill:rgb(0,0,255);
+    stroke-width:3;
+}
+
+hr {
+    position: position;
+    top: 20px;
+    border: none;
+    height: 12px;
+    background: blue;
+    margin-bottom: 50px;
+}
+
+.eye1{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top:1800px;
+    left:1400px;
+    pointer-events:none;
+}
+
+.eye2{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top:1800px;
+    left:1100px;
+    pointer-events:none;
+}
+
+
+.btn {
+    left:30px;
+    top:20px;
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    transition: transform 250ms, opacity 400ms;
+  }
+  
+  .btn:hover {
+    transform: translateY(-10px);
+  }
+
+  #title {
+    position: absolute;
+    font-size: 100px;
+    left: 350px;
+    top: 10px;
+    color: black;
+  }
